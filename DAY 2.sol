@@ -13,4 +13,9 @@ contract Day2{
         uint256 localVariable = 20;
         return localVariable;
     }
+
+    function checkAndAdd() public view returns(uint256){
+        uint256 returnedValue = returnLocalVariable();
+        return returnedValue + 100 + stateVariable;
+    }
 }
